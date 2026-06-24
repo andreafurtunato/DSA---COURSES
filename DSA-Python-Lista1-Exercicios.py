@@ -33,14 +33,18 @@ print(f"A divisão dos números é: {divisao_resultado}")
 saldo = 500.50
 saque = 200.25
 
-saque_do_saldo = saldo - saque
-print(f"O saldo final é de: {saque_do_saldo:.2f}")
+saldo_final = saldo - saque
+print(f"O saldo final é de: {saldo_final:.2f}")
 
 ########### Exercício 5 ###########
 # Declare uma variável booleana chamada tem_carteira_de_motorista e atribua a ela o valor True. Imprima uma mensagem que diga "Pode dirigir" se a variável for verdadeira e "Não pode dirigir" caso contrário.
 
-tem_carteira_motorista = True
-print(f"Pode dirigir. {tem_carteira_motorista}")
+tem_carteira_motorista = False
+
+if tem_carteira_motorista:
+    print("Pode dirigir!")
+else: 
+    print("Não pode dirigir!")
 
 ########### Exercício 6 ###########
 # Crie duas variáveis:
@@ -53,10 +57,12 @@ print(f"O resultado é: {idade_ana < idade_beto}")
 ########### Exercício 7 ###########
 # Receba um número inteiro do usuário e use o operador de módulo (%) para verificar se o número é par ou ímpar. Imprima o resultado.
 
-numero_digitado_str = input("Digite um número inteiro.")
-numero_digitado_int = int(numero_digitado_str)
-modulo_num = numero_digitado_int % 2
-print(f"O número digitado é: {numero_digitado_int}. E o módulo dele é: {modulo_num}")
+numero_modulo = int(input("Digite um número: "))
+
+if numero_modulo % 2 == 0:
+    print(f"O número: {numero_modulo} é PAR")
+else:
+    print(f"O número: {numero_modulo} é IMPAR")
 
 ########### Exercício 8 ###########
 # Crie duas variáveis booleanas:
@@ -65,7 +71,7 @@ esta_chovendo = True
 guarda_chuva = False
 
 # Use operadores lógicos para verificar se uma pessoa vai se molhar (se está chovendo E ela não tem guarda-chuva).
-print(f"A pessoa vai se molhar? {esta_chovendo and not guarda_chuva}")
+print(f"A pessoa vai se molhar? {esta_chovendo and guarda_chuva}")
 
 ########### Exercício 9 ###########
 # Calcule a potência de 2 elevado a 10 e imprima o resultado.
@@ -93,8 +99,7 @@ frase_sem_espaco = frase.strip()
 print(frase_sem_espaco)
 
 ########### Exercício 12 ###########
-frase_maiuscula = frase_sem_espaco.upper()
-print(frase_maiuscula)
+print(frase_sem_espaco.upper())
 
 ########### Exercício 13 ###########
 print(f"Subtituindo palavras: {frase_sem_espaco.replace('poderosa', 'incrível')}")
@@ -110,13 +115,16 @@ lista_compras = ["arroz", "feijão", "macarrão", "carne"]
 print(f"A lista de compras tem: {lista_compras}")
 
 ########### Exercício 17 ###########
+#Adicione leite a lista de compras.
 lista_compras.append("leite")
 print(lista_compras)
 
 ########### Exercício 18 ###########
+#Acesse e imprima o segundo item da lista de compras.
 print(lista_compras[1])
 
 ########### Exercício 19 ###########
+#Remova o item "macarrão" da lista de compras
 lista_compras.remove("macarrão")
 print(lista_compras)
 
@@ -128,6 +136,7 @@ print(f"A lista contém {len(numeros)} índices.")
 meses = ("Janeiro", "Fevereiro", "Março")
 
 ########### Exercício 22 ###########
+# Retorna mensagem de erro.
 # Tupla é imutável, não pode ser alterada depois de criada.
 
 ########### Exercício 23 ###########
@@ -142,6 +151,7 @@ filme = {
 
 ########### Exercício 25 ###########
 print(f"O ano de lançamento do filme é: {filme.get('ano')}")
+# print(f"O ano de lançamento do filme é: {filme("ano")}")     // outra opção.
 
 ########### Exercício 26 ###########
 filme["genero"] = "Drama"
@@ -166,9 +176,10 @@ print(intersecao)
 altura_str = input("Digite a sua altura em metros(ex: 1.75): ")
 peso_str = input("Digite seu peso em quilogramas(ex: 68.5): ")
 
-altura_float = float(altura_str)
-peso_float = float(peso_str)
+altura = float(altura_str)
+peso = float(peso_str)
 
-imc = peso_float / (altura_float ** 2)
+imc = peso / (altura ** 2)
 
 print(f"O calculo do IMC é: {imc:.2f}")
+

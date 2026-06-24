@@ -311,3 +311,4 @@ ano_nascimento = ano_atual - idade_usuario_int
 #Exibindo resultado
 print(f"\n Olá, {nome_usuario}!!. Bem vindo(a)!")
 print(f"Você tem {idade_usuario_int} anos e nasceu em {ano_nascimento}")
+
