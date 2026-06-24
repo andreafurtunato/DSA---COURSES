@@ -1,0 +1,46 @@
+####################### PSEUDOCODIGO #######################
+
+INÍCIO
+  
+  // 1. Apresentação
+  
+  ESCREVA "--- Jogo Pedra, Papel e Tesoura (2 Jogadores) ---"
+  
+  ESCREVA "Regras: Escolham entre 'pedra', 'papel' ou 'tesoura'."
+
+  // 2. Coleta de Dados
+  
+  LEIA a jogada do Jogador 1
+  
+  LEIA a jogada do Jogador 2
+
+  // 3. Tratamento dos Dados de Entrada
+  
+  CONVERTA a jogada do Jogador 1 para letras minúsculas e sem espaços
+  
+  CONVERTA a jogada do Jogador 2 para letras minúsculas e sem espaços
+
+  ESCREVA "Jogador 1 escolheu:", jogada_jogador1
+  
+  ESCREVA "Jogador 2 escolheu:", jogada_jogador2
+
+  // 4. Lógica para determinar o vencedor
+  
+  SE jogada_jogador1 == jogada_jogador2 ENTÃO
+    
+    ESCREVA "Resultado: Empate!"
+
+  
+  SENÃO SE (jogada_jogador1 == "pedra" E jogada_jogador2 == "tesoura") OU
+           (jogada_jogador1 == "tesoura" E jogada_jogador2 == "papel") OU
+           (jogada_jogador1 == "papel" E jogada_jogador2 == "pedra") ENTÃO
+    
+    ESCREVA "Resultado: Jogador 1 venceu!"
+
+  SENÃO
+    
+    ESCREVA "Resultado: Jogador 2 venceu!"
+
+  ESCREVA "Fim de jogo!"
+
+FIM
