@@ -166,7 +166,7 @@ lista_num = [1, 2, 2, 3, 4, 4, 5, 1]
 lista_sem_duplicados = set(lista_num)
 print(lista_sem_duplicados)
 
-########### Exercício 29 ###########
+############ Exercício 29 ############
 set_a = {1, 2, 3, 4, 6}
 set_b = {3, 4, 5, 6}
 intersecao = set_a.intersection(set_b)
