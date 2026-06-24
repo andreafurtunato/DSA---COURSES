@@ -5,7 +5,7 @@
 #    - Nome
 #    - Idade
 #    - Peso (em kg)
-#    - Altura (em metros)
+#    - Altura (em metros).
 
 # 2. Calcule o IMC usando a fórmula:
 #    IMC = peso / (altura ** 2)
