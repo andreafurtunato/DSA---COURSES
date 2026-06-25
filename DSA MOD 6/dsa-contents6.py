@@ -67,4 +67,4 @@ print("Contagem regressiva: ")
 
 while contador > 0:
     print(contador)
-    contador -=1   #contador = contador - 1
+    contador -=1    #contador = contador - 1
